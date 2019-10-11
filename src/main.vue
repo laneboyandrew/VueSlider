@@ -3,21 +3,8 @@
         <div class="attach">
             <div class="slider_case">
                 <v-slider v-bind="options">
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                    <div class="item">4</div>
-                    <div class="item">5</div>
-                    <div class="item">6</div>
-                    <div class="item">7</div>
-                    <div class="item">8</div>
-                    <div class="item">9</div>
-                    <div class="item">10</div>
-                    <div class="item">11</div>
-                    <div class="item">12</div>
-                    <div class="item">13</div>
-                    <div class="item">14</div>
-                    <!-- <div class="item">15</div> -->
+                   <img src="../img/pic1.jpg">
+                    <img src="../img/pic2.jpg">
                 </v-slider>
             </div>
 
@@ -35,25 +22,25 @@
         data () {
             return {
                 options: {
-                    items: 5,
-                    margin: 20,
+                    items: 2,
+                    margin: 5,
                     nav: true,
-                    dots: true,
+                    dots: false,
                     loop: true,
-                    timing: 'cubic-bezier(0, 0.72, 0.64, 1.06)',
+                    speed: 250,
+                    timing: 'ease-in-out',
                     offset: 1,
-                    prevNav: 'Туда',
-                    nextNav: 'Сюда',
-                    sibling: true,
+                    sibling: false,
                     responsive : {
                         0: {
-                            items: 1
+                            items: 1,
+                            nav: true
                         },
                         768: {
-                            items: 3
+                            items: 1
                         },
                         999: {
-                            items: 5
+                            items: 1
                         }
                     }
                 }

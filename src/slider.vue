@@ -24,7 +24,7 @@
             // Количество слайдов на странице
             items: {
                 type: Number,
-                default: 3
+                default: 2
             },
 
             // Отступы
@@ -36,13 +36,13 @@
             // Навигация
             nav: {
                 type: Boolean,
-                default: false
+                default: true
             },
 
             // Точечная навигация
             dots: {
                 type: Boolean,
-                default: false
+                default: true
             },
 
             // Перемотка
@@ -509,9 +509,6 @@
     .v_slider__dots li span { width: 8px; height: 8px; background: #dde2e6; float: left;  border-radius: 50%; }
     .v_slider__dots li span:hover { background: #fac301; }
     .v_slider__dots li.active span { background: #ff3f4d; }
-    
-    .v_slider__prev,
-    .v_slider__next { outline: none; background:transparent; padding: 10px 15px; border:1px solid #ff3f4d; color:#ff3f4d; font-size: 20px; opacity: 0.9; }
     .v_slider__prev:hover,
     .v_slider__next:hover { border-color: #04a0c5; color:#04a0c5; cursor: pointer; }
 
